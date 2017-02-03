@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.page {
+  margin: 0 auto;
+  background-image: url("../images/textures/noisy_grid.png");
+  color: #777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header{
+  margin-bottom: 40px; /*space before page content*/
+  height: 90px;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+.container{ /*set all content width and center*/
+  margin: auto;
+  width: 960px;
+  overflow: auto;
+}
+
+footer{
+  clear: both;
+  height: 90px;
+  padding: 35px;
+  margin-top: 40px; /*space between page content and footer start*/
+  text-align: center;
+  font-size: smaller;
+  background: #666;
+  color: #888;
+  border-top: 8px solid #4aaaa5;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bold;
+}
+
+/*header elements*/
+
+.logo{
+  height: 90px;
+  padding: 28px 35px 30px 35px;
+  font-size: 32px;
+  text-align: center;
+  float:left;
+  margin: 0;
+  background: #4aaaa5;
+  color: #fff;
+  border-bottom: 2px solid #ccc; /*continue header border*/
+}
+
+.nav_top{
+  float:right; /*right of header*/
+  margin: 30px 0 35px 0;
+  padding: 0;
+}
+
+.nav_top li { /*list items in nav_top */
+  height: 20px;
+  width: 100px;
+  list-style-type:none; /*no bullets*/
+  float: left; /*next to each other*/
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.nav_top li:last-child{
+  border-right: none;
+}
+
+.nav_top li a { /*links in li */
+  color: #777;
+  text-decoration: none;
+}
+
+.nav_top li a:hover {
+  color: #5D2E16;
+  font-size: 15.5px;
+}
+
+/*main_content elements*/
+
+.main_content{
+  width: 650px;
+  float:left;
+  padding: 8px 30px 35px 30px;
+  background: #fff;
+  border: thin solid #ddd;
+}
+
+.main_content h2 {
+  font-size: 1.8em;
+  margin: 0; /*remove some default margins*/
+  padding: 30px 0 30px 0;
+  border-bottom : 3px solid #ddd;
+}
+
+.main_content p a {
+  color: #5D2E16;
+  text-decoration: none;
+}
+
+.main_content p a:hover {
+  color: #AA6B4A;
+  
+}
+
+/*sidebar elements*/
+
+.sidebar{
+  width: 270px;
+  height: 200px;
+  float: right;
+  background: #fff;
+  border: thin solid #ddd;
+  padding: 10px 20px 0 20px;
+}
+
+.sidebar h3{
+  width: 210px;
+  font-size: 1.4em;
+  padding: 20px 0 20px 0;
+  margin: 0 auto; /*center header container in sidebar, remove extra top/bottom spaces*/
+  border-bottom: 2px solid #ddd;
+}
+
+.sidebar ul{
+  padding: 25px 0 25px 0; /*remove default R/L padding*/ 
+  /*also I measured/calculated 20px but it didn't look right so I adjusted slightly */
+
+  margin: 0 auto; /*center row of links in sidebar*/ 
+  text-align: center; /*center links in ul container*/
+}
+
+.social_links li{
+  list-style-type:none;
+  padding: 0 2.5px 0 2.5px; /*measured 5px R/L but it didn't match the picture and looked odd so I adjusted*/
+
+  margin: 0;
+  display: inline-block;
+  line-height: 0; /*get rid of extra space below img*/
+}
+
+.social_links img {
+  width: 60px;
+}
+
+.social_links img:hover {
+  width: 59px;
+}
+
+/*page specific elements*/
+
+/*about*/
+.about_me{
+  margin: 30px 10px 0 0;
+}
+
+.headshot{
+  width: 180px;
+  margin: 0 25px 0 0;
+  float: left;
+}
+
+.about_me p {
+  line-height: 170%;
+  margin: 0 0 30px 0;
+}
+
+.about_me p:last-child {
+  margin: 0;
+  padding-top: 10px;
+}
+
+/*portfolio*/
+.project_container {
+  overflow: auto; 
+  padding: 40px 0 0 0;
+}
+
+.project:nth-child(odd) {
+  float: left;
+}
+.project:nth-child(even){
+  float: right;
+}
+.project {
+  margin: 0 0 55px 0;
+  text-align: center;
+  position: relative;
+}
+.project:last-child{
+  margin: 0;
+}
+
+.project img {
+  display: block; /*remove a little space under in div (img default inline) messes with positioning of h4*/
+}
+
+.project h4 {
+  font-weight: normal;
+  font-size: 1.3em;
+  margin: 0; /*remove some default margin*/
+  padding: 15px 0 20px 0;
+  background: #4aaaa5;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+  width: 100%;
+}
+
+/*contact*/
+.contact_form{
+  padding: 30px 0 0 0;
+  font-size: large;
+}
+
+.contact_form input {
+  height: 30px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  border: thin solid #ddd;
+}
+.contact_form textarea {
+  width: 100%;
+  height: 200px;
+  margin: 10px 0 20px 0;
+  color: #777;
+  font-size: 14px;
+  border: thin solid #ddd;
+}
+
+.contact_form button {
+  width: 115px;
+  height: 40px;
+  font-size: large;
+  background: #4aaaa5;
+  color: #fff;
+  border: none;
+}
+
+.contact_form button:hover{
+  background: #347773;
+}
+
+.contact_form input {
+  padding: 0 0 0 10px;
+  color: #777;
+  font-size: 14px;
+}
+
+/*animations*/
+
+.project {
+   -webkit-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+}
+.project:nth-child(even):hover {
+    -webkit-transform: rotate(-3deg);
+     -moz-transform: rotate(-3deg);
+       -o-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+.project:nth-child(odd):hover {
+    -webkit-transform: rotate(3deg);
+     -moz-transform: rotate(3deg);
+       -o-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
