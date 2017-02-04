@@ -312,13 +312,15 @@ h1, h2, h3, h4, h5, h6 {
 
   .project {
     width: 100%;
+    height: 270px;
+    margin: 0 0 40px 0;
   }
   .project:last-child {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   .project img {
     width: 100%;
-    height: 270px;
+    height: 100%;
     object-fit: cover; /*crop img to fit and center */ 
   }
   .project h4 {
@@ -359,6 +361,24 @@ h1, h2, h3, h4, h5, h6 {
   }
   .about_me p:last-child {
     margin: 0;
+  }
+
+  /*portfolio content*/
+
+  .project {
+    width: 315px;
+    height: 235px;
+  }
+  .project:last-child {
+    margin-bottom: 25px;
+  }
+  .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*crop img to fit and center */ 
+  }
+  .project h4 {
+    padding: 15px 0 20px 0;
   }
 
 }
