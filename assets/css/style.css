@@ -329,8 +329,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
-  .container {width: 728px;}
-  .main_content {width: 100%; float:none;}
+  .container {width: 95%;}
+  .container_center {width: 95%;}
+  .main_content {width: 100%; float:none; }
   .sidebar {
     width: 100%; 
     float:none;
@@ -384,8 +385,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 640px) {
   .container {width: 100%;}
-  .container_center {width: 600px;}
-  .main_content {width: 600px;}
+  .container_center {width: 95%;}
+  .main_content {width: 100%;}
 
   /*header content */
 
@@ -447,3 +448,4 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 0 20px 0;
   }
 }
+
